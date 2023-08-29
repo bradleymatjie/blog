@@ -1,0 +1,145 @@
+.posts {    
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;
+    color: #252525;
+    background-color: aliceblue;
+
+    & > h1 {
+        text-align: center;
+    }
+
+    & .recentPost {
+        display: flex;
+        align-self: center;
+        gap: 10px;
+        height: 200px;
+        width: 90%;
+        background-color: rgba(255, 255, 255, 0.4);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        color: #252525;
+        border-radius: 20px;
+        overflow: hidden;
+        max-width: 500px;
+        box-shadow: 1px 1px 2px 1px lightgrey;
+
+        @media (min-width: 640px) {
+            max-width: 700px;
+            height: 300px;
+        }
+
+        & img {
+            width: 50%;
+            height: 100%;
+        }
+
+        & .date {
+            font-size: 10px;
+
+                
+            @media (min-width: 640px) {
+                font-size: 12px;
+            }
+        }
+
+        & h1 {
+            font-size: 1.1em;
+        
+                
+            @media (min-width: 640px) {
+                font-size: 2em;
+            }
+        }
+
+        & .subtext {
+            font-size: 10px;
+
+                
+            @media (min-width: 640px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    & .search {
+        text-align: center;
+
+        & input {
+            width: 60%;
+            height: 40px;
+            border: none;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 14px;
+
+
+            &::placeholder {
+                text-align: center;
+            }
+        }
+    }
+
+    & .postsContainer {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+
+        & .post {
+            width: 45%;
+            max-width: 400px;
+            height: 200px;
+            
+
+            @media (min-width: 640px) {
+                height: 300px;
+                padding: 10px;
+            }
+
+            & img {
+                height: 100px;
+                width: 100%;
+
+                
+            @media (min-width: 640px) {
+                height: 150px;
+            }
+            }
+
+            & > div {
+                // container div
+                & p {
+                    font-size: 10px;
+
+                            
+                    @media (min-width: 640px) {
+                       font-size: 14px;
+                    } 
+                }
+
+                & h1 {
+                    font-size: 12px;
+
+                    
+                    @media (min-width: 640px) {
+                        font-size: 18px;
+                    }
+                }
+
+                & .subtext {
+                    font-size: 4px;
+
+                    
+                    @media (min-width: 640px) {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

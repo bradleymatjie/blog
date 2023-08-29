@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500;600;700&family=Lato:ital,wght@0,400;1,300&family=Quicksand:wght@400;500&display=swap');
+
+body {
+    background-color: whitesmoke;
+    color: #252525;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: 'Lato', Helvetica;
+}
+
+
+.App {
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
