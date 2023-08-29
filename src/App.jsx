@@ -7,6 +7,7 @@ import { MobileMenu } from './Components/MobileMenu/MobileMenu'
 import { Route, Routes } from 'react-router-dom';
 import { Home } from './Pages/Home/Home';
 import { Posts } from './Pages/Posts/Posts'
+import { SinglePost } from './Pages/SinglePost/SinglePost'
 
 function App() {
   const [menuToggler, setMenuToggler] = useState(false);
@@ -26,6 +27,7 @@ function App() {
       <Routes>
         <Route path='/blog/' element={<Home />} />
         <Route path='/blog/posts' element={<Posts />} />
+        <Route path='/blog/posts/:id' element={<SinglePost />} />
       </Routes>
     </div>
   )

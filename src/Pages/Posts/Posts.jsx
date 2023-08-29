@@ -1,13 +1,15 @@
 import './Posts.scss'
 import saint from '../../assets/saint.jpg'
 import { useState } from 'react'
+import postsBg from '../../assets/postsBg.jpg'
 
 export const Posts = () => {
     const [search, setSearch] = useState('');
 
     return (
-        <section className="posts">
-            <h1>The Blog</h1>
+        <section className="posts" style={{backgroundImage: `url(${postsBg})`}}>
+            <h1>Perspective Pulse</h1>
+            <p className="by">By Bradley Matjie</p>
             <div className="recentPost">
                 <img src={saint} alt="" />
                 <div>

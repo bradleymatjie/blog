@@ -1,0 +1,59 @@
+.singlePost {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 10px 0;
+    color: #252525;
+    background-color: whitesmoke;
+
+    & .leftarrow {
+        height: 50px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        @media (min-width: 640px) {
+            padding-left: 50px;
+        }
+
+        & > a {
+            border-bottom: none;
+            text-decoration: none;
+            color: #252525;
+        }
+    }
+
+    & h2 {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    & h1 {
+        margin-top: 0;
+        font-size: 28px;
+    }
+
+    & p {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    & .imageContainer {
+        height: 260px;
+
+        & > img {
+        height: 200px;
+        width: 100%;
+        }
+
+        & > div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

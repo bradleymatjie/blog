@@ -1,14 +1,14 @@
 import { memo } from 'react';
 import { NavLink } from 'react-router-dom'
 import './Header.scss';
+import logo from '../../assets/logo.png'
 
 export const Header = memo(({ menuTogglerFunction, menuTogglerValue }) => {
 
  return (
   <header className='header'>
       <div>
-      {/* <img src='' alt="logo" /> */}
-      <h2>BLOG</h2>
+      <h2>Perspective Pulse</h2>
       </div>
 
     <nav>

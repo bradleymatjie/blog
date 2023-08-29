@@ -11,6 +11,12 @@
 
     & > h1 {
         text-align: center;
+        margin-bottom: 0;
+    }
+
+    & .by {
+        margin-top: 0;
+        text-align: center;
     }
 
     & .recentPost {
@@ -27,6 +33,7 @@
         overflow: hidden;
         max-width: 500px;
         box-shadow: 1px 1px 2px 1px lightgrey;
+        cursor: pointer;
 
         @media (min-width: 640px) {
             max-width: 700px;
@@ -94,6 +101,7 @@
             width: 45%;
             max-width: 400px;
             height: 200px;
+            cursor: pointer;
             
 
             @media (min-width: 640px) {
