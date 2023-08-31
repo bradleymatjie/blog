@@ -8,17 +8,18 @@
     background-size: cover;
     padding: 100px 10px 0;
     color: #252525;
-    background-color: whitesmoke;
+    background-color: rgb(242, 242, 242);
+
+    @media (min-width: 1024px) {
+        background-color: transparent;
+    }
+        
 
     & .leftarrow {
         height: 50px;
         display: flex;
         gap: 10px;
         align-items: center;
-
-        @media (min-width: 640px) {
-            padding-left: 50px;
-        }
 
         & > a {
             border-bottom: none;
@@ -27,33 +28,155 @@
         }
     }
 
-    & h2 {
-        font-size: 14px;
-        margin: 0;
+    & .middle {
+
+        @media (min-width: 1024px) {
+            display: flex;
+        }
+
+        & > :first-child {
+            
+            & > div {
+            padding: 20px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            
+            @media (min-width: 1024px) {
+                box-shadow: 1px 1px 5px 1px darkgray;
+                background-color: azure;
+                opacity: .4;
+                width: 70%;
+                border-radius: 20px;
+                transition: 1s all ease-in-out;
+
+                &:hover {
+                    position: relative;
+                    z-index: 5;
+                    opacity: 1;
+                    transform: scale(1.1) translateX(50px);
+                }
+             }
+            }
+
+                & h2 {
+                font-size: 14px;
+                margin: 0;
+        
+                @media (min-width: 1024px) {
+                    font-size: 16px;
+                }
+            }
+    
+            & h1 {
+                margin-top: 0;
+                font-size: 28px;
+                
+                @media (min-width: 1024px) {
+                    font-size: 48px;
+                    max-width: 80%;
+                }
+            }
+        
+            & p {
+                font-size: 12px;
+                margin: 0;
+        
+                
+                @media (min-width: 1024px) {
+                    font-size: 18px;
+                    max-width: 600px;
+                    text-align: left;
+                }
+            }
+        }
+
+
+        
     }
 
-    & h1 {
-        margin-top: 0;
-        font-size: 28px;
-    }
-
-    & p {
-        font-size: 12px;
-        margin: 0;
-    }
 
     & .imageContainer {
         height: 260px;
 
+        @media (min-width: 375px) {
+            height: 300px;
+        }
+
+        
+        @media (min-width: 640px) {
+            height: 350px;
+        }
+
+        @media (min-width: 1024px) {
+            max-width: 70%;
+            height: 500px;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.4);
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+            box-shadow: 1px 1px 5px 1px grey;
+            transition: 1s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1) translateX(-50px);
+            }
+        }
+
         & > img {
         height: 200px;
         width: 100%;
+        border-radius: 20px;
+
+        @media (min-width: 375px) {
+            height: 250px;
         }
+
+        
+        @media (min-width: 640px) {
+            height: 300px;
+        }
+        
+        
+        @media (min-width: 1024px) {
+            height: 450px;
+        }
+    }
 
         & > div {
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            & p {
+                margin: 0;
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+    }
+
+    & .paragraph {
+
+        @media (min-width: 1024px) {
+            max-width: 40%;
+            position: absolute;
+            bottom: 40px;
+            left: 20px;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: darkslategrey;
+            color: azure;
+            opacity: .5;
+            transition: 1s ease-in-out;
+
+            &:hover {
+                opacity: 1;
+                transform: scale(1.2) translateX(70px);
+            }
         }
     }
 }

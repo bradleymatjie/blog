@@ -12,29 +12,35 @@ export const SinglePost = () => {
                 <NavLink to='/blog/posts'>Back</NavLink>
             </div>
             
-            <h2>Keywords: computers, AI, software</h2>
-            <h1>Tentana Creativity Block pada UI Designer</h1>
-            <p> 
-            Lorem ipsum dolor sit amet consectetur, 
-                adipisicing elit. Et numquam consequuntur 
-                est deserunt corporis aut dolores, quas 
-                suscipit sunt, molestias 
-            </p>
-            <div className='imageContainer'>
-                <img src={saint} alt="post image" />
+            <div className='middle'>
                 <div>
-                    <div className="author">
-                        <p>Author</p>
-                        <p>Bradley Matjie</p>
+                    <div>
+                        <h2>Categories: computers, AI, software</h2>
+                        <h1>Tentana Creativity Block pada UI Designer</h1>
+                        <p> 
+                        Lorem ipsum dolor sit amet consectetur, 
+                            adipisicing elit. Et numquam consequuntur 
+                            est deserunt corporis aut dolores, quas 
+                            suscipit sunt, molestias 
+                        </p>
                     </div>
-                    <div className="published">
-                        <p>Published</p>
-                        <p>28 AUG 2023. 16:13pm</p>
+                </div>
+                <div className='imageContainer'>
+                    <img src={saint} alt="post image" />
+                    <div>
+                        <div className="author">
+                            <p>Author</p>
+                            <p>Bradley Matjie</p>
+                        </div>
+                        <div className="published">
+                            <p>Published</p>
+                            <p>28 AUG 2023. 16:13pm</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <p>
+            <p className='paragraph'>
                 Lorem ipsum dolor sit amet consectetur 
                 adipisicing elit. A magnam non quia dolores 
                 doloremque iure incidunt consequuntur ad! 
