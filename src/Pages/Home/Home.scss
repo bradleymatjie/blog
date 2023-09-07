@@ -56,8 +56,9 @@
 
             & p {
                 font-size: 10px;
-                width: 50%;
-                max-width: 40%;
+                width: 60%;
+
+                // max-width: 40%;
             
                 @media (min-width: 600px) {
                     font-size: 14px;;
