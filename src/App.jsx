@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import bg from './assets/bg.jpg'
+import { data } from './Data'
 
 import { Header } from './Components/Header/Header'
 import { MobileMenu } from './Components/MobileMenu/MobileMenu'
@@ -8,6 +9,7 @@ import { Route, Routes } from 'react-router-dom';
 import { Home } from './Pages/Home/Home';
 import { Posts } from './Pages/Posts/Posts'
 import { SinglePost } from './Pages/SinglePost/SinglePost'
+import { Create } from './Pages/Create/Create'
 
 function App() {
   const [menuToggler, setMenuToggler] = useState(false);
@@ -25,9 +27,10 @@ function App() {
       />
       <MobileMenu removeMenu={removeMenu} menuToggler={menuToggler} />
       <Routes>
-        <Route path='/blog/' element={<Home />} />
+        <Route path='/blog/' element={<Home data={[...data]}/>} />
         <Route path='/blog/posts' element={<Posts />} />
         <Route path='/blog/posts/:id' element={<SinglePost />} />
+        <Route path='/blog/create' element={<Create />} />
       </Routes>
     </div>
   )

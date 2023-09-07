@@ -1,0 +1,18 @@
+.create {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;
+    color: #252525;
+    height: 85vh;
+}
+
+.ProseMirror {
+    background-color: #252525;
+    color: whitesmoke;
+    width: 70%;
+    margin: 30px auto;
+}

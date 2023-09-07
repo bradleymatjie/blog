@@ -75,6 +75,8 @@
 
     & .search {
         text-align: center;
+        position: sticky;
+        top: 80px;
 
         & input {
             width: 60%;

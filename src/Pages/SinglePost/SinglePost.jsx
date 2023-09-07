@@ -3,8 +3,14 @@ import './SinglePost.scss'
 import left from '../../assets/left.svg'
 import saint from '../../assets/saint.jpg'
 
+import { useParams } from 'react-router-dom';
+import { data } from '../../Data';
 
 export const SinglePost = () => {
+    const { id } = useParams();
+
+    const item = data.find((item) => item.id === Number(id));
+
     return (
         <section className="singlePost">
             <div className='leftarrow'>
@@ -15,49 +21,29 @@ export const SinglePost = () => {
             <div className='middle'>
                 <div>
                     <div>
-                        <h2>Categories: computers, AI, software</h2>
-                        <h1>Tentana Creativity Block pada UI Designer</h1>
-                        <p> 
-                        Lorem ipsum dolor sit amet consectetur, 
-                            adipisicing elit. Et numquam consequuntur 
-                            est deserunt corporis aut dolores, quas 
-                            suscipit sunt, molestias 
+                        <h2>Categories: {item.categories}</h2>
+                        <h1>{item.title}</h1>
+                        <p> {item.subdescription} 
                         </p>
                     </div>
                 </div>
                 <div className='imageContainer'>
-                    <img src={saint} alt="post image" />
+                    <img src={item.img} alt="post image" />
                     <div>
                         <div className="author">
                             <p>Author</p>
-                            <p>Bradley Matjie</p>
+                            <p>{item.author}</p>
                         </div>
                         <div className="published">
                             <p>Published</p>
-                            <p>28 AUG 2023. 16:13pm</p>
+                            <p>{item.posted}</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <p className='paragraph'>
-                Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. A magnam non quia dolores 
-                doloremque iure incidunt consequuntur ad! 
-                Ducimus ad deleniti exercitationem pariatur 
-                sed doloribus quod eveniet quo ipsa animi.
-                Odit, a, voluptate delectus dolores libero 
-                earum numquam suscipit iste id voluptatibus 
-                esse quidem cupiditate? Necessitatibus harum 
-                quos facilis, eum aliquid itaque. Tempora 
-                reiciendis quibusdam dolorem quaerat 
-                necessitatibus incidunt? Necessitatibus!
-                Necessitatibus aut repellat provident omnis 
-                saepe iure maiores est magni fugit nostrum, 
-                reiciendis perspiciatis distinctio ullam laborum. 
-                Quaerat beatae, dolores necessitatibus incidunt 
-                eaque inventore modi eius suscipit nihil. Voluptates, 
-                quibusdam?
+                {item.description}
             </p>
         </section>
     );
