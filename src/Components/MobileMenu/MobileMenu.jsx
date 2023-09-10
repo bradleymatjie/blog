@@ -15,8 +15,10 @@ export const MobileMenu = ({ removeMenu, menuToggler }) => {
             <NavLink to='/blog/posts' onClick={removeMenu}>Blog</NavLink>
           </li>
 
-          <li id='create' onClick={removeMenu}>
-            Create Post
+          <li id='login'>
+            <NavLink to='/blog/login' onClick={removeMenu}>
+              Sign In
+            </NavLink>
           </li>
       </ul>
     </div>

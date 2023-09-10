@@ -21,8 +21,10 @@ export const Header = memo(({ menuTogglerFunction, menuTogglerValue }) => {
             <NavLink to='/blog/posts'>Blog</NavLink>
           </li>
 
-          <li id='create'>
+          <li id='loginDesktop'>
+            <NavLink to='/blog/login'>
               Sign In
+            </NavLink>
           </li>
       </ul>
     </nav>

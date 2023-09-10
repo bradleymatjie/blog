@@ -33,7 +33,6 @@
 .mobileMenu li {
   font-family: 'Lato-regular';
   font-size: 1.5em;
-  width: 100%;
   text-align: center;
   height: 40px;
   line-height: 40px;
@@ -53,4 +52,11 @@
   opacity: 1;
   color: lightgray;
   font-size: 1.2em;
+}
+
+#login {
+  width: 50%;
+  margin: 10px auto;
+  color: #000402;
+  background-color: aliceblue;
 }

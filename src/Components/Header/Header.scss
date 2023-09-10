@@ -126,11 +126,14 @@
   transform: rotate(-45deg);
 }
 
-#create {
+#loginDesktop {
       padding: 10px 20px;
-      color: white;
       background-color: #252525;
       border-radius: 20px;
+
+      & > a {
+        color: white;
+      }
 
       &:hover {
         border-bottom: none;

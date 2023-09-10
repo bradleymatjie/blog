@@ -8,9 +8,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     &_container {
         padding: 0 10px;
+        max-width: 400px;
 
         & form {
             display: flex;
@@ -19,7 +21,7 @@
 
             & h1 {
                 font-size: 24px;
-                width: 30%;
+                width: 40%;
                 border-bottom: 4px double #252525;
             }
 
@@ -59,7 +61,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 0 10px;
+
+    &_container {
+        max-width: 300px;
+    }
 
       & form {
             display: flex;
