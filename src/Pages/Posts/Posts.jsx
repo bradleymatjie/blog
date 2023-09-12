@@ -2,13 +2,19 @@ import './Posts.scss';
 import saint from '../../assets/saint.jpg';
 import { useState } from 'react';
 import postsBg from '../../assets/postsBg.jpg';
+import { useNavigate } from "react-router-dom";
 import { data } from '../../Data';
 
 export const Posts = () => {
     const [search, setSearch] = useState('');
     const [filteredPosts, setFilteredPosts] = useState(data);
 
-    // Function to handle search input change
+    const navigate = useNavigate();
+
+    function NavigateSinglePost(item) {
+        navigate(`/blog/posts/${item.id}`);
+    }
+    // Function to handle search  input change
     const handleSearchChange = (event) => {
         const query = event.target.value;
         setSearch(query);
@@ -48,7 +54,7 @@ export const Posts = () => {
 
             <div className="postsContainer">
                 {filteredPosts.map((post) => (
-                    <div className="post" key={post.id}>
+                    <div className="post" key={post.id} onClick={() => NavigateSinglePost(post)}>
                         <img src={saint} alt="" />
                         <div>
                             <p className="date">{post.posted}</p>

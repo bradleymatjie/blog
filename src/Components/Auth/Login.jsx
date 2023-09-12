@@ -10,7 +10,7 @@ export const Login = () => {
 
   const userAuth = (e) => {
     e.preventDefault();
-    navigate('/blog/home');
+    navigate('/blog/');
   }
 
   return (

@@ -76,7 +76,15 @@
     & .search {
         text-align: center;
         position: sticky;
-        top: 80px;
+        height: 100px;
+        top: 60px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: whitesmoke;
 
         & input {
             width: 60%;

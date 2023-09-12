@@ -11,7 +11,7 @@ export const Signup = () => {
 
   const userAuth = async (e) => {
     e.preventDefault();
-    navigate('/blog/home');
+    navigate('/blog/');
   }
   
   return (
